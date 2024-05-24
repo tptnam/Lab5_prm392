@@ -24,15 +24,15 @@ public class UserRecycle extends AppCompatActivity {
         RecyclerView rvUser = findViewById(R.id.item_user);
 
         userList = new ArrayList<>();
-        userList.add(new User("AnguyeVan", "Nguyen Van A", "a@fpt.edu.vn"));
-        userList.add(new User("BnguyeVan", "Nguyen Van B", "abc@fpt.edu.vn"));
-        userList.add(new User("CnguyeVan", "Nguyen Van C", "abcd@fpt.edu.vn"));
-        userList.add(new User("DnguyeVan", "Nguyen Van D", "abcde@fpt.edu.vn"));
-        userList.add(new User("EnguyeVan", "Nguyen Van E", "abcdf@fpt.edu.vn"));
-        userList.add(new User("FnguyeVan", "Nguyen Van F", "abcdef@fpt.edu.vn"));
-        userList.add(new User("GnguyeVan", "Nguyen Van G", "abcdefg@fpt.edu.vn"));
-        userList.add(new User("HnguyeVan", "Nguyen Van H", "abcdefgh@fpt.edu.vn"));
-        userList.add(new User("KnguyeVan", "Nguyen Van K", "abcdefghk@fpt.edu.vn"));
+        userList.add(new User("AnguyeVan", "Nguyen Van A", "a@fpt.edu.vn",R.drawable.img));
+        userList.add(new User("BnguyeVan", "Nguyen Van B", "abc@fpt.edu.vn",R.drawable.img));
+        userList.add(new User("CnguyeVan", "Nguyen Van C", "abcd@fpt.edu.vn",R.drawable.img));
+        userList.add(new User("DnguyeVan", "Nguyen Van D", "abcde@fpt.edu.vn",R.drawable.img));
+        userList.add(new User("EnguyeVan", "Nguyen Van E", "abcdf@fpt.edu.vn",R.drawable.img));
+        userList.add(new User("FnguyeVan", "Nguyen Van F", "abcdef@fpt.edu.vn",R.drawable.img));
+        userList.add(new User("GnguyeVan", "Nguyen Van G", "abcdefg@fpt.edu.vn",R.drawable.img));
+        userList.add(new User("HnguyeVan", "Nguyen Van H", "abcdefgh@fpt.edu.vn",R.drawable.img));
+        userList.add(new User("KnguyeVan", "Nguyen Van K", "abcdefghk@fpt.edu.vn",R.drawable.img));
 
 
         UserAdapter adapter = new UserAdapter(userList);

@@ -5,6 +5,7 @@ import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -37,6 +38,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder>{
         holder.tvUsername.setText("Username: " + user.getUsername());
         holder.tvFullName.setText("Fullname: " + user.getFullname());
         holder.tvEmail.setText("Email: " + user.getEmail());
+        holder.avt.setImageResource(user.getImg());
     }
 
     @Override
@@ -49,12 +51,15 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder>{
         TextView tvUsername;
         TextView tvFullName;
         TextView tvEmail;
+
+        ImageView avt;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             tvUsername = itemView.findViewById(R.id.tv_username);
             tvFullName = itemView.findViewById(R.id.tv_fullname);
             tvEmail = itemView.findViewById(R.id.tv_email);
+            avt = itemView.findViewById(R.id.avt);
         }
     }
 }
